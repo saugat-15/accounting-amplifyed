@@ -96,11 +96,7 @@ export default function Accounts({ signOut, user }: any) {
         ))}
       </ul>
       <button
-        style={{
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-        }}
+        className="text-red-700"
         onClick={signOut}
       >
         Sign out

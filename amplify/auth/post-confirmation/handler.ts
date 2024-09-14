@@ -8,7 +8,7 @@ import { env } from "$amplify/env/post-confirmation";
 const client = new CognitoIdentityProviderClient();
 
 // add user to group
-export const handler: PostConfirmationTriggerHandler = async (event) => {
+export const handler: PostConfirmationTriggerHandler = async (event : any) => {
   const email = event.request.userAttributes["email"];
 
   // add user to group
