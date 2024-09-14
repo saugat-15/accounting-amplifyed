@@ -1,25 +1,45 @@
-## AWS Amplify Next.js (App Router) Starter Template
+# Small Finance Institution Accounting Application
 
-This repository provides a starter template for creating applications using Next.js (App Router) and AWS Amplify, emphasizing easy setup for authentication, API, and database capabilities.
-
-## Overview
-
-This template equips you with a foundational Next.js application integrated with AWS Amplify, streamlined for scalability and performance. It is ideal for developers looking to jumpstart their project with pre-configured AWS services like Cognito, AppSync, and DynamoDB.
+This is a simple accounting application designed for small financial institutions to efficiently track customer deposits, withdrawals, and other transactions. The application is built using modern technologies to ensure scalability, security, and performance.
 
 ## Features
+- **Customer Management**: Create, read, update, and delete customer records.
+- **Transaction Tracking**: Record customer deposits, withdrawals, and various other transactions.
+- **Basic Reporting**: View a list of transactions per customer.
 
-- **Authentication**: Setup with Amazon Cognito for secure user authentication.
-- **API**: Ready-to-use GraphQL endpoint with AWS AppSync.
-- **Database**: Real-time database powered by Amazon DynamoDB.
+## Tech Stack
+- **Frontend**: Next.js with TypeScript for type-safe, server-side rendering and client-side interactivity.
+- **Authentication**: AWS Cognito for user authentication and secure access.
+- **GraphQL API**: AWS AppSync to power real-time data queries and mutations.
+- **API Management**: AWS API Gateway to handle REST APIs and manage traffic.
+- **Database**: Amazon DynamoDB for fast and scalable NoSQL database solutions.
+- **Hosting & Deployment**: AWS Amplify for hosting and continuous integration/continuous deployment (CI/CD).
 
-## Deploying to AWS
+## Current Status
+The application is currently in its initial stages with basic CRUD functionalities implemented:
+- Add, view, edit, and delete customer records.
+- Add, view, and delete transaction records (deposits, withdrawals).
 
-For detailed instructions on deploying your application, refer to the [deployment section](https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/#deploy-a-fullstack-app-to-aws) of our documentation.
+## Upcoming Features
+- **Role-based Access Control**: Implement role-based access for staff, admins, and customers.
+- **Transaction Categorization**: Add categories for different types of transactions (e.g., savings, loan payments).
+- **Detailed Reporting**: Provide more in-depth transaction reports and analysis.
+- **Notification System**: Notify customers via email for each transaction.
+- **Mobile Support**: Optimize for mobile usage.
+- **Export to CSV**: Allow users to export transaction data to CSV format.
+- **Multi-language Support**: Add support for multiple languages.
+- **Analytics Dashboard**: Integrate a visual dashboard to view trends in deposits, withdrawals, and balances over time.
 
-## Security
+## Getting Started
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+### Prerequisites
+- Node.js (>= 14.x)
+- AWS CLI configured
 
-## License
+### Installation
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+Clone the repository:
+
+```bash
+git clone https://github.com/your-repo/accounting-app.git
+cd accounting-app
